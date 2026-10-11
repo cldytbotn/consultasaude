@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minhas consultas | App de Saúde</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">+</span>
+        <span>
+          app<span class="brand-accent">saúde</span>
+          <small>cuidado que conecta</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="profissionais.html">Profissionais</a>
+        <a class="active" href="consultas.html">Minhas consultas</a>
+        <a href="agenda.html">Agenda profissional</a>
+      </nav>
+
+      <a class="header-action" href="profissionais.html">
+        Nova consulta <span>↗</span>
+      </a>
+    </header>
+
+    <main class="page-main">
+      <div class="page-intro page-intro-row">
+        <div>
+          <span class="eyebrow">
+            <span class="dot"></span> SEU ESPAÇO DE CUIDADO
+          </span>
+          <h1>Minhas <em>consultas.</em></h1>
+          <p>Acompanhe seus próximos atendimentos e mantenha tudo organizado.</p>
+        </div>
+
+        <a class="btn btn-primary" href="profissionais.html">+ Agendar consulta</a>
+      </div>
+
+      <div class="summary-grid">
+        <div class="summary-card">
+          <span class="summary-icon icon-mint">▣</span>
+          <span>Próximas consultas</span>
+          <strong>02</strong>
+          <small>Agendamentos futuros</small>
+        </div>
+
+        <div class="summary-card">
+          <span class="summary-icon icon-peach">◷</span>
+          <span>Próximo atendimento</span>
+          <strong>Hoje</strong>
+          <small>15:30 · Clínica geral</small>
+        </div>
+
+        <div class="summary-card">
+          <span class="summary-icon icon-lilac">✓</span>
+          <span>Status</span>
+          <strong>Confirmada</strong>
+          <small>Seu horário está reservado</small>
+        </div>
+      </div>
+
+      <section class="appointments-panel">
+        <div class="panel-heading">
+          <div>
+            <span class="eyebrow">AGENDA PESSOAL</span>
+            <h2>Seus próximos atendimentos</h2>
+          </div>
+
+          <select aria-label="Filtrar consultas">
+            <option>Todas as consultas</option>
+            <option>Confirmadas</option>
+            <option>Marcadas</option>
+          </select>
+        </div>
+
+        <article class="appointment-row">
+          <div class="date-block">
+            <strong>11</strong>
+            <span>OUT</span>
+          </div>
+
+          <div class="appointment-main">
+            <h3>
+              Dra. Marina Lima
+              <span class="pill pill-green">Confirmada</span>
+            </h3>
+            <p>Clínica geral · Consulta presencial</p>
+            <span class="appointment-location">⌖ Centro Médico Vida · Sala 204</span>
+          </div>
+
+          <div class="appointment-time">
+            <strong>15:30</strong>
+            <span>Hoje · 30 minutos</span>
+          </div>
+
+          <div class="appointment-actions">
+            <button
+              class="btn btn-outline"
+              type="button"
+              onclick="alert('Demonstração: o fluxo de remarcação não está conectado a um sistema real.')"
+            >
+              Remarcar
+            </button>
+            <button
+              class="cancel-link"
+              type="button"
+              onclick="alert('Demonstração: cancelamento não executado. A regra prevista exige antecedência mínima de 2 horas para cancelamento sem taxa.')"
+            >
+              Cancelar
+            </button>
+          </div>
+        </article>
+
+        <article class="appointment-row">
+          <div class="date-block date-blue">
+            <strong>15</strong>
+            <span>OUT</span>
+          </div>
+
+          <div class="appointment-main">
+            <h3>
+              Dr. Rafael Costa
+              <span class="pill pill-blue">Marcada</span>
+            </h3>
+            <p>Cardiologia · Consulta presencial</p>
+            <span class="appointment-location">⌖ Clínica Horizonte · Sala 08</span>
+          </div>
+
+          <div class="appointment-time">
+            <strong>09:00</strong>
+            <span>Quinta-feira · 45 minutos</span>
+          </div>
+
+          <div class="appointment-actions">
+            <button
+              class="btn btn-outline"
+              type="button"
+              onclick="alert('Demonstração: o fluxo de remarcação não está conectado a um sistema real.')"
+            >
+              Remarcar
+            </button>
+            <button
+              class="cancel-link"
+              type="button"
+              onclick="alert('Demonstração: cancelamento não executado. A regra prevista exige antecedência mínima de 2 horas para cancelamento sem taxa.')"
+            >
+              Cancelar
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <aside class="reminder-banner">
+        <span class="reminder-icon">♧</span>
+        <div>
+          <strong>Lembrete de consulta</strong>
+          <p>
+            O sistema foi projetado para enviar lembretes 24 horas antes do atendimento, por e-mail ou notificação.
+          </p>
+        </div>
+        <span class="pill pill-green">Recurso previsto</span>
+      </aside>
+
+      <p class="prototype-note">
+        Dados ilustrativos. Esta interface não consulta cadastro real e não executa cancelamentos, remarcações ou notificações.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand-footer" href="index.html">
+        <span class="brand-mark">+</span>
+        <span>
+          app<span class="brand-accent">saúde</span>
+          <small>cuidado que conecta</small>
+        </span>
+      </a>
+
+      <p>Um jeito mais simples de cuidar da saúde.</p>
+
+      <div class="footer-links">
+        <a href="index.html">Início</a>
+        <a href="profissionais.html">Profissionais</a>
+        <a href="agenda.html">Agenda</a>
+      </div>
+
+      <small>© 2026 App de Saúde · Projeto acadêmico de interface</small>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissionais | App de Saúde</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">+</span>
+        <span>app<span class="brand-accent">saúde</span><small>cuidado que conecta</small></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a class="active" href="profissionais.html">Profissionais</a>
+        <a href="consultas.html">Minhas consultas</a>
+        <a href="agenda.html">Agenda profissional</a>
+      </nav>
+
+      <a class="header-action" href="consultas.html">Minhas consultas <span>↗</span></a>
+    </header>
+
+    <main class="page-main">
+      <div class="page-intro">
+        <span class="eyebrow"><span class="dot"></span> ENCONTRE SEU CUIDADO</span>
+        <h1>Profissionais que cuidam <em>de você.</em></h1>
+        <p>Filtre por especialidade e convênio, encontre opções e escolha um horário disponível.</p>
+      </div>
+
+      <section class="search-panel">
+        <div class="search-title">
+          <div>
+            <span class="step-label">01 / BUSCA</span>
+            <h2>Encontre seu especialista</h2>
+          </div>
+          <span class="secure-label">⌑ Busca demonstrativa</span>
+        </div>
+
+        <form class="filter-form" action="profissionais.html" method="get">
+          <label>
+            Especialidade
+            <select name="especialidade">
+              <option value="">Todas as especialidades</option>
+              <option>Clínica geral</option>
+              <option>Cardiologia</option>
+              <option>Dermatologia</option>
+              <option>Pediatria</option>
+            </select>
+          </label>
+
+          <label>
+            Convênio
+            <select name="convenio">
+              <option value="">Todos os convênios</option>
+              <option>Particular</option>
+              <option>Saúde Plus</option>
+              <option>BemViver</option>
+            </select>
+          </label>
+
+          <label class="date-field">
+            Data desejada
+            <input type="date" name="data">
+          </label>
+
+          <button class="btn btn-primary filter-button" type="submit">
+            Buscar profissionais <span>⌕</span>
+          </button>
+        </form>
+      </section>
+
+      <div class="results-heading">
+        <div>
+          <span class="eyebrow">OPÇÕES PARA VOCÊ</span>
+          <h2>Profissionais em destaque</h2>
+        </div>
+        <span class="results-count">03 profissionais</span>
+      </div>
+
+      <div class="doctor-grid">
+        <article class="doctor-card">
+          <div class="doctor-card-top">
+            <div class="avatar doctor-a">ML</div>
+            <span class="pill pill-green">Disponível hoje</span>
+          </div>
+
+          <h3>Dra. Marina Lima</h3>
+          <p class="specialty">Clínica geral</p>
+
+          <div class="doctor-meta">
+            <span>★ 4,9 <small>(120)</small></span>
+            <span>◷ 30 min</span>
+          </div>
+
+          <div class="insurance">
+            <span>Convênios aceitos</span>
+            <strong>Saúde Plus · BemViver</strong>
+          </div>
+
+          <div class="slots">
+            <span>Próximos horários</span>
+            <div>
+              <span>14:30</span>
+              <span>15:30</span>
+              <span>16:00</span>
+            </div>
+          </div>
+
+          <a class="btn btn-primary btn-full" href="consultas.html">Escolher horário →</a>
+        </article>
+
+        <article class="doctor-card">
+          <div class="doctor-card-top">
+            <div class="avatar doctor-b">RC</div>
+            <span class="pill pill-blue">Amanhã</span>
+          </div>
+
+          <h3>Dr. Rafael Costa</h3>
+          <p class="specialty">Cardiologia</p>
+
+          <div class="doctor-meta">
+            <span>★ 4,8 <small>(96)</small></span>
+            <span>◷ 45 min</span>
+          </div>
+
+          <div class="insurance">
+            <span>Convênios aceitos</span>
+            <strong>Saúde Plus · Particular</strong>
+          </div>
+
+          <div class="slots">
+            <span>Próximos horários</span>
+            <div>
+              <span>09:00</span>
+              <span>10:15</span>
+              <span>11:00</span>
+            </div>
+          </div>
+
+          <a class="btn btn-primary btn-full" href="consultas.html">Escolher horário →</a>
+        </article>
+
+        <article class="doctor-card">
+          <div class="doctor-card-top">
+            <div class="avatar doctor-c">AF</div>
+            <span class="pill pill-blue">Amanhã</span>
+          </div>
+
+          <h3>Dra. Ana Ferreira</h3>
+          <p class="specialty">Dermatologia</p>
+
+          <div class="doctor-meta">
+            <span>★ 4,9 <small>(84)</small></span>
+            <span>◷ 30 min</span>
+          </div>
+
+          <div class="insurance">
+            <span>Convênios aceitos</span>
+            <strong>BemViver · Particular</strong>
+          </div>
+
+          <div class="slots">
+            <span>Próximos horários</span>
+            <div>
+              <span>08:30</span>
+              <span>09:30</span>
+              <span>13:00</span>
+            </div>
+          </div>
+
+          <a class="btn btn-primary btn-full" href="consultas.html">Escolher horário →</a>
+        </article>
+      </div>
+
+      <p class="prototype-note">
+        * Profissionais, avaliações e horários são dados fictícios para demonstrar a interface.
+        O agendamento não é enviado a um sistema real.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand-footer" href="index.html">
+        <span class="brand-mark">+</span>
+        <span>app<span class="brand-accent">saúde</span><small>cuidado que conecta</small></span>
+      </a>
+      <p>Um jeito mais simples de cuidar da saúde.</p>
+      <div class="footer-links">
+        <a href="index.html">Início</a>
+        <a href="consultas.html">Consultas</a>
+        <a href="agenda.html">Agenda</a>
+      </div>
+      <small>© 2026 App de Saúde · Projeto acadêmico de interface</small>
+    </footer>
+  </body>
+</html>
